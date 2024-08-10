@@ -18,7 +18,7 @@ body {
     border-radius: .5rem;
     margin: 70px 7rem;
     font-size: 1.3rem;
-    
+    transition: all .3s;
 }
 
 li {
@@ -34,16 +34,14 @@ i {
 }
 
 p {
-    visibility: hidden;
+    display: none;
 }
 
 .container:hover {
     max-width: 15rem;
     cursor: pointer;
-    transition: 1s;
-    p {
-        visibility: visible;
-        transition: 1s;
-    }
+}
 
+.container:hover p{
+        display: block;
 }
